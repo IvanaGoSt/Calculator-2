@@ -93,6 +93,49 @@ function ce() {
   display.value = display.value.slice(0, -1);
 }
 
-/*document.addEventListener("keypress", function(e) {
-  alert(e.key);
-});*/
+document.addEventListener("keypress", function(e) {
+  function clickKey(id){
+    e.preventDefault();
+    document.getElementById(id).click();
+  }
+ switch(e.key){
+   case "1": clickKey("one");
+     break;
+   case "2": clickKey("two");
+     break;
+   case "3": clickKey("three");
+     break;
+   case "4": clickKey("four");
+     break;
+   case "5": clickKey("five");
+     break;
+   case "6": clickKey("six");
+     break;
+   case "7": clickKey("seven");
+     break;
+   case "8": clickKey("eight");
+     break;
+   case "9": clickKey("nine");
+     break;
+   case "0": clickKey("zero");
+     break;
+   case ",": clickKey("point");
+   case ".": clickKey("point");
+     break;
+   case "Delete": clickKey("c");
+     break;
+   case "Backspace": clickKey("ce");
+     break;
+   case "Enter": clickKey("equal");
+     break;
+   case "+": clickKey("add");
+     break;
+   case "-": clickKey("subtract");
+     break;
+   case "*": clickKey("multiply");
+     break;
+   case "/": clickKey("divide");
+     break;
+ }
+
+});
