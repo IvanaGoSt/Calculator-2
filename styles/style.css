@@ -1,0 +1,121 @@
+body {
+  background-color: #f2f2f2;
+}
+#container {
+  max-width: 300px;
+  /*height: 100;*/
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "display display display display"
+                       "c c ce add"
+                       "seven eight nine subtract"
+                       "four five six multiply"
+                       "one two three divide"
+                       "zero point equal equal"
+}
+
+#box {
+  grid-area: display;
+}
+
+#c {
+  grid-area: c;
+}
+
+#ce {
+  grid-area: ce;
+}
+
+#add {
+  grid-area: add;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#multiplay {
+  grid-area: multiplay;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#point {
+  grid-area: point;
+}
+
+#equal {
+  grid-area: equal;
+}
+
+input {
+  height: 60px;
+  font-size: 20px;
+}
+#display {
+  background-color: black;
+  color: #ffe0b3;
+  padding-left: 3%;
+  width: 97%;
+  font-size: 28px;
+}
+
+.number {
+  background-color: #ffe0b3;
+}
+
+.operator {
+  background-color: #ffc266;
+}
+
+.rest, #equal {
+  background-color: #ff9900;
+}
+
+.operator, #point {
+  color: black;
+}
