@@ -93,6 +93,6 @@ function ce() {
   display.value = display.value.slice(0, -1);
 }
 
-document.addEventListener("keypress", function(e) {
+/*document.addEventListener("keypress", function(e) {
   alert(e.key);
-});
+});*/
